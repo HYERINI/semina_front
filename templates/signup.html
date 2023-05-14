@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="../static/css/signup.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="./../static/js/signup.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div class="signup_body">
+    <!--이부분이 base !! -->
+    <div class="main_menu">
+        <h2 onClick="location.href='./index.html'">BLOG CRUD 연습하기</h2>
+        <div class="main_right_menu">
+            <p onclick="location.href='./login.html'">로그인</p>
+            <p onclick="location.href='./signup.html'">회원가입</p>
+        </div>
+    </div>
+    <!-- 요기까지 -->
+    <div class="signup_body_box">
+        <h1>- 회원가입 -</h1>
+        <div class="signup_body_id">
+            <h3>아이디</h3>
+            <input type="email" id="username" placeholder="아이디 입력하세요" />
+        </div>
+        <div class="signup_body_pw">
+            <h3>비밀번호</h3>
+            <input type="password" id="password" placeholder="비밀번호 입력하세요"/>
+        </div>
+        <div class="signup_body_name">
+            <h3>이름</h3>
+            <div>
+                <input type="text" id="first_name" placeholder="성"/>
+                <input type="text" id="last_name" placeholder="이름"/>
+            </div>
+        </div>
+        <div class="signup_body_email">
+            <h3>이메일</h3>
+            <input type="email" id="email" placeholder="이메일 입력하세요"/>
+        </div>
+        <div class="signup_bt_wrap">
+            <button type="button" onclick="onSubmitSignup();">회원가입</button>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="./../static/img/LIKELION%20UNIV_brandlogo_white_forweb_221111.png"/>
+    </div>
+</div>
+</body>
+</html>
