@@ -34,7 +34,12 @@ body{
     margin-right: 50px;
 }
 
-.main_top_body> h1{
+.main_top_body > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.main_top_body > div > h1{
     display: flex;
     flex-direction: row;
     line-height: 50px;
@@ -43,8 +48,20 @@ body{
     color: white;
 }
 
-.main_top_body > h1 > div{
+.main_top_body > div > h1 > div{
     color: #f59a3e;
+}
+
+.main_top_body > div > button{
+    background-color: #f59a3e;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    border: 0;
+    padding: 8px 0px;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
 .main_introduce_wrap{

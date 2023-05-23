@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판 목록</title>
+  <link rel="stylesheet" href="../static/css/post.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+  <div class="post_body_wrap">
+    <div class="main_menu">
+      <h2 onClick="location.href='./index.html'">BLOG CRUD 연습하기</h2>
+      <div class="main_right_menu">
+        <p onclick="location.href='./login.html'">로그인</p>
+        <p onclick="location.href='./signup.html'">회원가입</p>
+      </div>
+    </div>
+    <div class="post_body">
+      <div class="post_list_wrap" id="postListWrap">
+<!--        <div class='post_list' onClick='moveDetailPost(" + data.posts[i].id + ");'>-->
+<!--          <div class='post_title'><h3>" + data.posts[i].title + "</h3></div>-->
+<!--          <div class='post_time'><h3>" + data.posts[i].updated_at + "</h3></div>-->
+<!--        </div>-->
+      </div>
+      <div class="post_bt_wrap">
+          <button type="button" onclick="movePost();">
+              작성하기
+          </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="./../static/js/post.js"></script>
+</html>

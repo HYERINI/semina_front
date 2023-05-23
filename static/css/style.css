@@ -4,6 +4,10 @@ html, body, h2, p{
     padding: 0;
 }
 
+body{
+    background-color: black;
+}
+
 .main_menu{
     position: fixed;
     top: 0;
